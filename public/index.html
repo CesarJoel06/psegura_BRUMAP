@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BRUMAP - Login</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-app login-wrapper">
+  <div class="card login-card">
+    <img src="/assets/img/logo.png" class="brand-mark" alt="BRUMAP">
+    <h1 class="title">Iniciar Sesión</h1>
+    <form class="form vertical" action="/api/auth/login" method="post">
+      <label class="label">Usuario</label>
+      <input class="input" name="username" placeholder="usuario (supervisor)" required>
+      <label class="label">Contraseña</label>
+      <input class="input" name="password" type="password" placeholder="contraseña (admin)" required>
+      <button class="btn btn-primary mt-lg" type="submit">Iniciar Sesión</button>
+      <div class="label" id="msg"></div>
+    </form>
+    <div class="subtitle mt-sm">Demo: operario / supervisor / administrador + admin</div>
+  </div>
+  <script src="/assets/js/login.js?v=8"></script>
+</body>
+</html>
